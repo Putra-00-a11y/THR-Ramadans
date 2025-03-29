@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THR Keberuntungan⏳</title>
+    <link rel="stylesheet" href="thrPulsa.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Burger Menu -->
+        <div class="burger-menu" onclick="toggleMenu()">☰</div>
+    </nav>
+    
+    <!-- Sidebar Menu -->
+    <div id="sidebar" class="sidebar">
+        <a href="indexZ.html" class="side-item">Home</a>
+        <a href="jadwal.html" class="side-item">Jadwal</a>
+        
+        <div class="dropdown">
+            <select id="minigameDropdown" class="side-item">
+                <option value="" disabled selected>Pilih Minigames</option>
+                <option value="jadwal.html">Klik Cepat!</option>
+                <option value="jadwal.html">Memory Card!</option>
+                <option value="jadwal.html">Simon Says!</option>
+            </select>
+        </div>
+
+        <a href="informasi.html" class="side-item">Informasi</a>
+        <a href="faq.html" class="side-item">FAQ</a>
+    </div>
+
+  
+    <div class="intro">
+    <h1 class="intro-text">Selamat Datang di THR Keberuntungan</h1>
+    </div>
+
+    <!-- Judul & Deskripsi -->
+    <h1 class="title">Selamat Datang!</h1>
+    <p class="desc">
+        Helooo, putra mo bagi" THR pulsa 50K bagi yang beruntung, cukup klik tombol setelah countdown tepat pada tanggalnya dan lihat hasilnya.<br> Rezeki? or bisa dilain waktu?.
+    </p>
+
+    <!-- Peraturan -->
+    <div class="rules">
+        <h2>Peraturan:</h2>
+        <ul>
+            <li><b>•Asli!</b> - Tidak ada manipulasi, Konkret dan Amanah 100%</li>
+             <li><b>•Bukti</b> - Jika beruntung silakan di-<i>Screenshoot</i> sebagai bukti sah</li>
+            <li><b>•Persentase</b> - memiliki peluang 10% untuk mendapatkannya</li>
+            <li><b>•Pemotongan</b> - Jika ada 3 orang mendapatkan bersamaan, maka pulsa akan dipotong setengahnya.
+            <li><b>•Klik Sekali!</b> - Tombol "Semoga Beruntung" hanya bisa ditekan <b>1x</b>.</li>
+            <li><b>•Kecurangan</b> - Jika mendapat pulsa dengan segala kecurangan maka transfer tidak akan dilakukan dan hangus.</li>
+        </ul>
+    </div>
+
+    <!-- Countdown -->
+    <div id="countdown">00:00:00</div>
+
+    <!-- Tombol -->
+    <button class="btn cek-btn" onclick="cekHoki()" id="cekH">Cek Keberuntungan</button>
+    <button class="btn hoki-btn" id="hokiButton" onclick="mainHoki()" id="hokiBtn">Semoga Beruntung</button>
+
+    <!-- Audio Backsound -->
+    <audio id="bg-music" loop autoplay>
+        <source src="ramadan.mp3" type="audio/mpeg">
+    </audio>
+
+    <footer class="footer">
+    <p class="copyright">© 2025 THR Keberuntungan</p>
+    <p class="dev-info">Developer : <b>Putra🦂</b></p>
+    </footer>
+
+    <script src="thrPulsa.js"></script>
+</body>
+</html>

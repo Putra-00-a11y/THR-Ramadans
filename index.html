@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THR Keberuntungan⏳</title>
+    <style>
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+      }
+      
+      body {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 137vh;
+      }
+      
+      div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .intro {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #000;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      
+      .intro-text {
+          position: fixed;
+          top: 48.3%;
+          color: white;
+          font-size: 28px;
+          opacity: 100%;
+          text-align: center;
+          animation: fadeIn 2s ease-in-out forwards, slideUp 1.5s ease-in-out;
+      }
+      
+      #buttonX {
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        bottom: 10%;
+        width: 50%;
+        height: 6%;
+        background-color: lightgray;
+        color: black;
+        opacity: 85%;
+        border-radius: 10%;
+        outline: none;
+        font-family: Monospace;
+        font-size: 1.2rem;
+      }
+      
+      #buttonX:active {
+        background-color: black;
+        color: white;
+        opacity: 90%;
+      }
+      
+      /* Animasi */
+      @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+      }
+      
+      @keyframes slideUp {
+          from { transform: translateY(-20px); }
+          to { transform: translateY(0); }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="intro">
+    <h1 class="intro-text">Selamat Datang di THR Keberuntungan</h1>
+    </div>
+    <button type="submit" id="buttonX" onclick="buttonXx()">Masuk Yok!</button>
+    
+    <script>
+      const button0 = document.getElementById("buttonX");
+      
+      function buttonXx() {
+        setTimeout (() => {
+          console.info("Masuk..");
+          
+          button0.style.display = "none";
+          setTimeout (() => {
+            window.location.href = "indexZ.html";
+          }, 1200);
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+/* General Style */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title */
+h1 {
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Container */
+form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input & Select */
+input, select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 95%;
+    font-size: 1em;
+}
+
+/* Checkbox */
+label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Button */
+button {
+    background: #ffcc00;
+    color: black;
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff9900;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    form {
+        width: 90%;
+    }
+}
+
+#doneB {
+  display: none;
+}

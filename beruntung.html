@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉Beruntung! Klaim Pulsa🎉</title>
+    <link rel="stylesheet" href="styleH.css">
+</head>
+<body>
+
+    <h1> Selamat! <br>Kamu Beruntung!</h1>
+    <p>Isi data di bawah ini untuk klaim pulsa 50K.</p>
+
+    <form id="klaimForm">
+        <label>Nama Penerima:</label>
+        <input type="text" id="nama" placeholder="Nama singkat" required>
+
+        <label>Nomor HP:</label>
+        <input type="tel" id="nomor" placeholder="Awalan +62" required>
+
+        <label>Provider Pulsa:</label>
+        <select id="provider">
+            <option value="Telkomsel">Telkomsel</option>
+            <option value="XL">XL</option>
+            <option value="Indosat">Indosat</option>
+            <option value="Tri">Tri</option>
+            <option value="Smartfren">Smartfren</option>
+        </select>
+
+        <label>
+            <input type="checkbox" id="konfirmasi" required>
+            Saya siap menerima THR ini!
+        </label>
+
+        <button type="submit" id="doneA">Klaim Pulsa</button>
+        <button id="doneB" disabled="">Memproses..</button>
+    </form>
+
+    <script>
+        const buttonA = document.getElementById("doneA");
+        const buttonB = document.getElementById("doneB");
+      
+        document.getElementById("klaimForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let data = {
+                nama: document.getElementById("nama").value,
+                nomor: document.getElementById("nomor").value,
+                provider: document.getElementById("provider").value,
+            };
+
+            // Simpan ke localStorage
+            localStorage.setItem("klaimData", JSON.stringify(data));
+            
+            setTimeout(() => {
+              console.info("Memproses Data!");
+              
+              buttonA.style.display = "none";
+              buttonB.style.display = "block";
+              setTimeout(() => {
+                // Redirect ke laman selamat
+                window.location.href = "selamat.html";
+              }, 3700);
+            }, 1200);
+        });
+    </script>
+
+</body>
+</html>

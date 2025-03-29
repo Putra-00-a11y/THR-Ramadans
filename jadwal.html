@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal</title>
+    <link rel="stylesheet" href="jadwal.css">
+</head>
+<body>
+
+    <h1 class="title">📅 Seputar Jadwal</h1>
+    <p class="desc">Beberapa minigame masih terkunci. Tunggu sampai waktunya tiba!</p>
+
+    <div class="game-list">
+        <div class="game">
+            <h2>🟢 Minigame 1 - Fast Klik!</h2>
+            <p>Status: <span class="open">Bisa Dimainkan🔓</span></p>
+            <button onclick="window.location.href='game1.html'">Mainkan</button>
+        </div>
+
+        <!-- Minigame 2 -->
+<div>
+    <h3>🔴Minigame 2 - Memory Cards!</h3>
+    <p>Status: <span id="statusGame2" style="color: red;">Terkunci🔒</span></p>
+    <p>Waktu buka: <span id="countdownGame2">Loading...</span></p>
+    <button id="btnGame2" disabled>Belum Bisa</button>
+</div>
+
+<!-- Minigame 3 -->
+<div>
+    <h3>🔴Minigame 3 - Simon Says!</h3>
+    <p>Status: <span id="statusGame3" style="color: red;">Terkunci🔒</span></p>
+    <p>Waktu buka: <span id="countdownGame3">Loading...</span></p>
+    <button id="btnGame3" disabled>Belum Bisa</button>
+</div>
+
+<!-- THR Pulsa -->
+<div>
+    <h3>🔴Moment THR Pulsa</h3>
+    <p>Status: <span id="statusTHR" style="color: red;">Terkunci🔒</span></p>
+    <p>Waktu buka: <span id="countdownTHR">Loading...</span></p>
+    <button id="btnTHR" disabled>Belum Bisa</button>
+</div>
+
+
+    <button class="back-btn" onclick="window.location.href='indexZ.html'">⬅ Kembali ke Laman Awal</button>
+
+    <script src="jadwal.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says!</title>
+    <link rel="stylesheet" href="game3.css">
+</head>
+<body>
+
+    <h1 class="title">🧠 Simon Says</h1>
+    <p class="desc">Ingat dan ulangi pola warna yang muncul! Berapa jauh bisa bertahan?</p>
+    
+    <div id="game-board">
+        <div class="color-btn red" id="red" onclick="playerClick('red')"></div>
+        <div class="color-btn blue" id="blue" onclick="playerClick('blue')"></div>
+        <div class="color-btn yellow" id="yellow" onclick="playerClick('yellow')"></div>
+        <div class="color-btn green" id="green" onclick="playerClick('green')"></div>
+    </div>
+
+    <button class="start-btn" onclick="startGame()">Mulai Game</button>
+    <p class="score">Score: <span id="score">0</span></p>
+
+    <button class="back-btn" onclick="goBack()">⬅ Kembali ke Laman Awal</button>
+
+    <script src="game3.js"></script>
+</body>
+</html>

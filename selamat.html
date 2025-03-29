@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✅ Klaim Berhasil!</title>
+    <link rel="stylesheet" href="styleH.css">
+</head>
+<body>
+
+    <h1>Klaim Berhasil!🎊</h1>
+    <p>Selamat, data kamu sudah tersimpan. Silakan download dan kirim file (JSON) ke WhatsApp (082234435745) <br><i> Waktu proses ±24 jam</i></p>
+
+    <button id="downloadJson">📥 Download JSON</button>
+
+    <script>
+        document.getElementById("downloadJson").addEventListener("click", function() {
+            let data = localStorage.getItem("klaimData");
+
+            if (data) {
+                let blob = new Blob([data], { type: "application/json" });
+                let url = URL.createObjectURL(blob);
+                let a = document.createElement("a");
+                a.href = url;
+                a.download = "klaim_pulsa.json";
+                a.click();
+                URL.revokeObjectURL(url);
+            } else {
+                alert("Data klaim tidak ditemukan.");
+            }
+        });
+    </script>
+
+</body>
+</html>
