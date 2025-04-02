@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Cek Kehokian (Buat Latihan Klik-Klik)
 function cekHoki() {
-    let hasil = Math.random() < 0.10 ? "Beruntung!" : "Tidak beruntung!";
+    let hasil = Math.random() < 0.12 ? "Beruntung!" : "Tidak beruntung!";
     alert("Hasil cek keberuntungan: " + hasil);
 }
 
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Fungsi tombol HOKI (Cuma Bisa Klik Sekali)
 function mainHoki() {
-    let hasil = Math.random() < 0.10 ? "beruntung.html" : "zonk.html";
+    let hasil = Math.random() < 0.12 ? "beruntung.html" : "zonk.html";
     window.location.href = hasil;
 
     // Simpan status tombol ke LocalStorage biar gak bisa ditekan lagi
