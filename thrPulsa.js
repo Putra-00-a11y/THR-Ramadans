@@ -46,7 +46,7 @@ function cekHoki() {
 // Cek apakah user sudah menekan tombol hoki sebelumnya
 document.addEventListener("DOMContentLoaded", function() {
     let hokiBtn = document.getElementById("hokiButton");
-    if (localStorage.getItem("hokiClicked") === "true") {
+    if (localStorage.getItem("hokiCek") === "true") {
         hokiBtn.disabled = true;
         hokiBtn.innerText = "Sudah Diklik..!";
     }
@@ -58,7 +58,7 @@ function mainHoki() {
     window.location.href = hasil;
 
     // Simpan status tombol ke LocalStorage biar gak bisa ditekan lagi
-    localStorage.setItem("hokiClicked", "true");
+    localStorage.setItem("hokiCek", "true");
 
     // Disable tombol & ubah teksnya
     let hokiBtn = document.getElementById("hokiButton");
